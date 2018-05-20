@@ -21,5 +21,8 @@ n > 2 → ¬(
 
 -- And that's it for the proof.
 theorem Fermat (n : ℕ) : fermat_true n :=
-falso.prove (fermat_true n)
+by falso.hyperprove
+-- Equivalent:
+-- falso.prove (fermat_true n)
+
 -- QED.
